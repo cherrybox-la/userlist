@@ -1,0 +1,183 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1F183C;
+}
+
+h1,
+a,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin: .5rem 2rem 2rem 2rem;
+    color: #1F183C;
+}
+
+.user-list {
+    width: 90%;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.user {
+    border-bottom: 1px solid rgb(231, 207, 207);
+    margin-bottom: 2rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user:last-of-type {
+    border: none;
+    margin: none;
+}
+
+.user .img-user {
+    width: 75px;
+    height: 75px;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user-description .user-name {
+    margin-bottom: .5rem;
+}
+
+.user-description .user-name a {
+    color: #E31C5F;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.user-description .user-followers {
+    opacity: 0.5;
+    text-transform: capitalize;
+}
+
+
+/*  Contact US */
+
+.copy {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.copy a {
+    color: #E31C5F;
+}
+
+.contact,
+.contact .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    margin: 3rem;
+    padding: 1rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 900px;
+    z-index: 100;
+}
+
+.contact:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.contact h2,
+.contact .social-networks {
+    margin-bottom: 2rem;
+}
+
+.contact h2,
+.contact p {
+    text-align: center;
+}
+
+.contact .content {
+    position: relative;
+    z-index: 4;
+    color: #1F183C;
+}
+
+.contact .social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-networks a {
+    margin-right: 2rem;
+}
+
+.social-networks a:last-of-type {
+    margin-right: 0;
+}
+
+.social-networks img {
+    width: 25px;
+}
+
+#exit {
+    position: absolute;
+    color: #1F183C;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 5rem;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+}
